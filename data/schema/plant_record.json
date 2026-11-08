@@ -1,0 +1,106 @@
+{
+  "record": "one viscosity measurement at one temperature",
+  "grain": "one row = one (slag sample, temperature) pair",
+  "required_columns": [
+    {
+      "name": "sample_id",
+      "dtype": "string"
+    },
+    {
+      "name": "date",
+      "dtype": "string"
+    },
+    {
+      "name": "furnace",
+      "dtype": "string"
+    },
+    {
+      "name": "T_C",
+      "dtype": "number"
+    },
+    {
+      "name": "eta_raw",
+      "dtype": "number"
+    },
+    {
+      "name": "eta_header",
+      "dtype": "string"
+    },
+    {
+      "name": "group",
+      "dtype": "string"
+    },
+    {
+      "name": "SiO2",
+      "dtype": "number"
+    },
+    {
+      "name": "Al2O3",
+      "dtype": "number"
+    },
+    {
+      "name": "CaO",
+      "dtype": "number"
+    },
+    {
+      "name": "MgO",
+      "dtype": "number"
+    },
+    {
+      "name": "FeO",
+      "dtype": "number"
+    },
+    {
+      "name": "S",
+      "dtype": "number"
+    },
+    {
+      "name": "R",
+      "dtype": "number"
+    },
+    {
+      "name": "R4",
+      "dtype": "number"
+    },
+    {
+      "name": "MgO_Al2O3",
+      "dtype": "number"
+    },
+    {
+      "name": "Lambda",
+      "dtype": "number"
+    },
+    {
+      "name": "x_CaO",
+      "dtype": "number"
+    },
+    {
+      "name": "x_SiO2",
+      "dtype": "number"
+    },
+    {
+      "name": "x_Al2O3",
+      "dtype": "number"
+    },
+    {
+      "name": "x_MgO",
+      "dtype": "number"
+    },
+    {
+      "name": "eta_Pas",
+      "dtype": "number"
+    },
+    {
+      "name": "ln_eta",
+      "dtype": "number"
+    },
+    {
+      "name": "invT",
+      "dtype": "number"
+    }
+  ],
+  "grouping_key": "group  (date_furnace); all rows sharing a group must stay in the same fold under T3",
+  "index": "sample_id",
+  "target": "ln_eta  (= ln(viscosity in Pa s))",
+  "note": "The plant record itself is proprietary and is not redistributed. This file documents the expected columns so every table and figure can be regenerated from the plant owner's own copy without modification."
+}

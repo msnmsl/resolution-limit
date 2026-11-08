@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# downloaded data
+data/gpvisc/
+data/plant/
+data/lhw_unpacked/
+
+# set the hash manifest once data is fetched
+data/manifest.json
+
+# generated
+outputs/figures/
+*.log
